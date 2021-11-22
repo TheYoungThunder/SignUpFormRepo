@@ -1,6 +1,19 @@
-body {
+body,
+html {
   background-color: azure;
   min-height: 100vh;
+}
+.outer-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 70vh;
 }
 
 @media (max-width: 375px) {
