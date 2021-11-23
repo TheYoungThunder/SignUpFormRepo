@@ -129,6 +129,7 @@ html {
   min-height: 100vh;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  color: whitesmoke;
 }
 .outer-container {
   min-height: 100vh;
@@ -163,11 +164,61 @@ html {
 }
 .sign-up-form {
   text-align: center;
+  width: 100%;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+.form-input-group {
+  padding: 20px;
+}
+
+button[type="submit"] {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.title-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#disclaimer {
+  font-size: 0.5rem;
+  margin: 5px;
+  color: hsl(249, 10%, 26%);
+}
+#trial-button {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: hsl(248, 32%, 49%);
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 input {
   display: block;
   margin: auto;
+  background-color: whitesmoke;
+  border: 1px solid hsl(249, 10%, 26%);
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  padding: 10px;
+  color: hsl(249, 10%, 26%);
 }
 
 @media (max-width: 375px) {
@@ -178,7 +229,17 @@ input {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 70vh;
+    min-height: 100vh;
     justify-content: center;
+  }
+  .form-container {
+    margin-top: 50px;
+  }
+  .text-container,
+  .form-container {
+    text-align: center;
+    width: 90%;
+    min-width: none;
+    max-width: none;
   }
 }
