@@ -6,12 +6,17 @@ signUpForm.addEventListener("submit", (e) => {
     // console.dir(input);
     if (input.tagName === "INPUT") {
       if (input.value === "") {
-        let errELement = document.createElement("P");
-        errELement.innerText = `${input.placeholder} can not be empty`;
-        errELement.classList.add("error-text");
-        input.after(errELement);
-        console.dir(errELement);
-        input.classList.add("error");
+        if (input.nextElementSibling.tagName !== "P") {
+          let errELement = document.createElement("P");
+          errELement.innerText = `${input.placeholder} can not be empty`;
+          errELement.classList.add("error-text");
+          input.after(errELement);
+          console.dir(errELement);
+          input.classList.add("error");
+        }
+      } else if (input.nextElementSibling.tagName === "P") {
+        input.classList.remove("error");
+        input.nextElementSibling.remove();
       }
     }
   }
