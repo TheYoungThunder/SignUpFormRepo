@@ -141,7 +141,7 @@ html {
   min-height: 100vh;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  color: whitesmoke;
+  color: hsl(249, 10%, 26%);
 }
 .outer-container {
   min-height: 100vh;
@@ -155,13 +155,14 @@ html {
   display: flex;
   align-items: stretch;
   width: 90%;
-  min-height: 70vh;
+  min-height: 80vh;
   justify-content: center;
 }
 .text-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: whitesmoke;
   min-width: 40%;
   max-width: 40%;
 }
@@ -224,13 +225,17 @@ input {
   display: block;
   margin: auto;
   background-color: whitesmoke;
-  border: 1px solid hsl(249, 10%, 26%);
+  border: 1px solid hsl(246, 25%, 77%);
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   border-radius: 5px;
   padding: 10px;
   color: hsl(249, 10%, 26%);
+}
+input[type="text"]:focus {
+  outline: none;
+  border: 1.5px solid hsl(249, 10%, 26%);
 }
 
 /* ############################################################ */
