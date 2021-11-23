@@ -1,7 +1,134 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body,
 html {
   background-color: azure;
   min-height: 100vh;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 .outer-container {
   min-height: 100vh;
@@ -10,14 +137,48 @@ html {
   justify-content: center;
 }
 .main-container {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
   display: flex;
-  align-items: center;
+  align-items: stretch;
   width: 90%;
-  height: 70vh;
+  min-height: 70vh;
+  justify-content: center;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 40%;
+  max-width: 40%;
+}
+.form-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  min-width: 40%;
+  max-width: 40%;
+}
+.sign-up-form {
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: auto;
 }
 
 @media (max-width: 375px) {
   body {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+  }
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+    justify-content: center;
   }
 }
